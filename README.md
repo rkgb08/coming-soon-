@@ -1,4 +1,7 @@
 # rkgb08 - Next Generation AI Glasses
+<p align="left">
+<a href="https://rkgb08.github.io/coming-soon-/" target="blank">https://rkgb08.github.io/coming-soon-/</a>
+
 <h3 align="right">Connect with me:</h3>
 <p align="right">
 <a href="https://twitter.com/rkgb08" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rkgb08" height="30" width="40" /></a>
