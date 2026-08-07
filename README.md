@@ -1,8 +1,5 @@
 # rkgb08 - Next Generation AI Glasses
-> https://img.youtube.com/vi/<VIDEO ID>/0.jpg
 
-[![pygame](https://img.youtube.com/vi/FfWpgLFMI7w/0.jpg)](https://www.youtube.com/watch?v=f17J3AXVK5w"pygame")
-![rkgb08 Logo](logo.png)
 
 > **"A smarter way to experience the future."**
 
@@ -42,7 +39,7 @@ Stay updated and get in touch with us across our official channels:
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/rkgb08" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="rkgb08" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/rkgb08" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rkgb08" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/company/rkgb08/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="rkgb08" height="30" width="40" /></a>
 <a href="https://instagram.com/rkgb08_" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="rkgb08_" height="30" width="40" /></a>
 <a href="https://www.youtube.com/c/rkgb08" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="rkgb08" height="30" width="40" /></a>
 </p>
