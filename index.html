@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>rkgb08</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- AOS scroll animations -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      html {
+        scrollbar-width: none;
+      }
+
+      html::-webkit-scrollbar {
+        display: none;
+      }
+
+      :root{
+        --dark-green:#1c2b22;
+        --mid-green:#2e4a37;
+        --accent-green:#336c47;
+        --accent-green-hover:#3e965d;
+        --cream:#f7f7f2;
+        --text-muted:#6b7a71;
+      }
+
+      * { 
+        box-sizing:border-box; 
+      }
+
+      body {
+        font-family:'Poppins',sans-serif;
+        background:var(--cream);
+        color:#2b2b2b;
+        margin:0;
+        scroll-behavior:smooth;
+        background-color:black;
+      }
+
+      a{ 
+        text-decoration:none; 
+      }
+
+    .inline-icon{
+      height: 2em;
+      width: auto;
+      vertical-align: -0.15em;
+      margin: 0 0.2em;
+    }
+
+    .video-container{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin:40px 0;
+    }
+
+    .video-container iframe{
+      width:100%;
+      /* max-width:900px; */
+      height:500px;
+      border:none;
+      border-radius:12px;
+    }
+
+    /* ---------- LOGO ONLY NAV ---------- */
+    .navbar-custom{
+      position: absolute;   /* Hero image ke upar */
+      top: 0;
+      align-items: top;
+      left: 0;
+      width: 100%;
+      padding: 0px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background: transparent; */
+      z-index: 100;
+    }
+
+    .navbar-brand-custom img{
+      height: 200px;      /* Bada logo */
+      width: auto;
+      display: block;
+    }
+
+    /* Hide unnecessary items */
+    .nav-links,
+    
+    .nav-toggle{
+      display: none;
+    }
+
+    
+
+            /* ---------- HERO ---------- */
+            .hero{
+                position:relative;
+                min-height:100vh;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+                padding:140px 20px 100px;
+                background:linear-gradient(160deg, rgba(20,40,28,0.55),rgba(15,32,22,0.55)),url('images (2).jpg');
+                background-size:cover;
+                background-position:center;
+                overflow:visible;
+            }
+  
+            .hero::before{
+              content:"";
+              position:absolute; 
+              inset:0;
+              background-image:
+                repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 60px),
+                repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 60px);
+              opacity:.25;
+            }
+
+            .hero-content{ 
+              position:relative; 
+              z-index:2; 
+            }
+
+            
+            .hero h1{
+                color:#fff;
+                font-weight:700;
+                font-size:2.8rem;
+                margin-bottom:8px;
+                letter-spacing:1px;
+            }
+            
+            .hero p.subtitle{
+                color:#cfe9d8;
+                text-transform:uppercase;
+                letter-spacing:3px;
+                font-size:.9rem;
+                font-weight:600;
+                margin-bottom:34px;
+            }
+
+            .btn-hero{
+                background:var(--accent-green);
+                color:#fff;
+                border:none;
+                padding:12px 28px;
+                margin:0 8px 10px;
+                border-radius:4px;
+                font-weight:500;
+                letter-spacing:.5px;
+                transition:background .25s ease, transform .2s ease;
+                display:inline-block;
+            }
+  
+            .btn-hero:hover{ 
+                background:var(--accent-green-hover); color:#fff; transform:translateY(-2px); 
+            }
+
+            .btn-hero.outline{
+                background:transparent;
+                border:1px solid rgba(255,255,255,0.5);
+            }
+
+            .btn-hero.outline:hover{ 
+                background:rgba(255,255,255,0.1); 
+            }
+
+            .social-row{
+                position:absolute;
+                left:50%;
+                bottom:0;
+                transform:translate(-50%, 50%);
+                z-index:6;
+                white-space:nowrap;
+            }
+  
+            .social-row a{
+                display:inline-flex;
+                align-items:center; justify-content:center;
+                width:52px; height:52px;
+                border-radius:50%;
+                background:#8f9a93;
+                color:#fff;
+                margin:0 6px;
+                font-size:1.15rem;
+                box-shadow:0 6px 16px rgba(0,0,0,0.25);
+                transition:background .25s ease, transform .2s ease;
+            }
+  
+            .social-row a:hover{ 
+                background:var(--accent-green); transform:translateY(-3px); 
+            }
+
+            @media (max-width:600px){
+                .social-row a{ width:42px; height:42px; font-size:1rem; margin:0 4px; }
+            }
+
+  /* ---------- TIMELINE ---------- */
+ 
+  footer{
+    background:#111c15;
+    color:#9fb0a4;
+    text-align:center;
+    padding:28px 20px;
+    font-size:.85rem;
+  }
+  footer .footer-name{ color:#fff; font-weight:600; }
+  footer .footer-socials a{
+    color:#9fb0a4; margin:0 8px; font-size:1rem;
+  }
+  footer .footer-socials a:hover{ color:#9fe0b4; }
+</style>
+</head>
+
+
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-custom">
+    <a href="#" class="navbar-brand-custom">
+        <img src="logo.png" alt="Logo">
+    </a>
+</nav>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+        <div class="hero-content" data-aos="fade-up">
+            
+            <h1 style="font-family: cursive;">COMING BEFORE 
+              <a href="https://www.marvel.com/movies/avengers-doomsday" target="_blank"><img src="dooms.png" alt="Doomsday logo" class="inline-icon"></a></h1>
+            <p class="subtitle" style="font-family: cursive;">&middot; We're bringing the next generation of AI Glasses &middot;</p>
+            <p class="subtitle" style="font-family: cursive;">&middot; The future is almost here &middot;</p>
+            <p class="subtitle" style="font-family: cursive;">&middot; Our AI Glasses are almost ready &middot;</p>
+            <p class="subtitle" style="font-family: cursive;">&middot; A smarter way to experience the future &middot;</p>
+            <div>
+                
+                <a href="ksgb08.pdf" class="btn-hero outline" id="portfolioBtn" >Learn More</a>
+            </div>
+        </div>
+
+
+        <!-- Social links row, straddling the border between the hero and the section below (like the reference site) -->
+       
+    </section>
+
+
+<div class="video-container">
+    <iframe
+    src="https://www.youtube.com/embed/f17J3AXVK5w?autoplay=1&controls=0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+</iframe>
+</div>
+
+
+    
+    
+    
+
+
+<!-- FOOTER -->
+<footer style="font-family: cursive;">
+  <div class="footer-socials" style="margin-bottom:10px;">
+    <a href="https://www.linkedin.com/in/rkgb08" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="mailto:rkgb08@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.instagram.com/rkgb08" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  &copy; <span id="year"></span> <span class="footer-name">rkgb08</span>. All rights reserved.
+  <div style="margin-top:6px;opacity:.7;font-size:.78rem;">Design by RKGB08</div>
+</footer>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+            AOS.init({ duration: 800, once: true, offset: 60 });
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Navbar background on scroll
+            const nav = document.getElementById('mainNav');
+            window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');});
+
+
+            // Mobile nav toggle
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.getElementById('navLinks');
+            navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+            navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('open'));});
+
+
+            // Resume / Portfolio buttons - placeholders until real links are added
+            // document.getElementById('resumeBtn').addEventListener('click', function(e){
+            // e.preventDefault();
+            // alert('Add your resume PDF link here once it is ready!');});
+            // document.getElementById('portfolioBtn').addEventListener('click', function(e){
+            // e.preventDefault();
+            // alert('Add your portfolio link here once it is ready!');});
+        </script>
+
+    </body>
+</html>
